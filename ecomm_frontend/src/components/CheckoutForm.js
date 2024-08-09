@@ -25,7 +25,7 @@ function CheckoutForm() {
     try {
       //fetching our client-secret from backend
       const { client_secret } = await fetch(
-        "http://localhost:8080/create-payment",
+        "https://ecomm-backend-pjcq.onrender.com/create-payment",
         {
           method: "POST",
           headers: {
