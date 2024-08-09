@@ -5,7 +5,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const appApi = createApi({
     reducerPath: "appApi",
     
-    baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:8080" }),
+    baseQuery: fetchBaseQuery({ baseUrl: "https://ecomm-backend-pjcq.onrender.com" }),
     //requests will go on baseUrl + url
     //endpoints - to define the actions that we will be performed at that url
     endpoints: (builder) => ({
