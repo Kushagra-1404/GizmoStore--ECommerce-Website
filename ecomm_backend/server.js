@@ -12,7 +12,8 @@ const { Server } = require("socket.io");
 //creating new instance of socket.io by passing the server(HTTP server)
 const io = new Server(server, {
 //so that any only accept requests from our frontend with below methods
-  cors: 'http://localhost:3001',
+  // cors: 'http://localhost:3001',
+  cors: 'https://gizmostore.netlify.app'
   methods: ['GET', 'POST', 'PATCH', "DELETE"]
 });
 
