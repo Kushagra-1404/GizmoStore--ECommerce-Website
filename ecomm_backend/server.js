@@ -13,7 +13,7 @@ const { Server } = require("socket.io");
 const io = new Server(server, {
 //so that any only accept requests from our frontend with below methods
   // cors: 'http://localhost:3001',
-  cors: 'https://gizmostore.netlify.app'
+  cors: 'https://gizmostore.netlify.app',
   methods: ['GET', 'POST', 'PATCH', "DELETE"]
 });
 
