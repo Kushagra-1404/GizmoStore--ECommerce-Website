@@ -36,5 +36,6 @@ export const userSlice = createSlice({
         builder.addMatcher(appApi.endpoints.createOrder.matchFulfilled, (_, { payload }) => payload);
     },
 });
+//action creators are generated for each reducer functions
 export const { logout, addNotification, resetNotifications } = userSlice.actions;
 export default userSlice.reducer;
