@@ -97,6 +97,7 @@ export const appApi = createApi({
     }),
 });
 
+//creating hooks for each endpoint
 export const {
     useSignupMutation,
     useLoginMutation,
